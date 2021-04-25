@@ -7,4 +7,32 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#4b73a3</color>
+    <color name="colorPrimaryDark">#6484a4</color>
+    <color name="colorAccent">#00a5ff</color>
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#00a5ff</color>
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <color name="biru">#3661D8</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="hitam">#000000</color>
+    <color name="merah">#FF0000</color>
+    <color name="hijau">#5dfc96</color>
+    <color name="kuning">#d0f14a</color>
+
+    <color name="lightGray">#737373</color>
+    <color name="lightGreen">#02a60c</color>
+    <color name="darkRed1">#D31027</color>
+    <color name="darkRed2">#EA384D</color>
+    <color name="darkPink">#E33C68</color>
+    <color name="darkBlue1">#2A45AD</color>
+    <color name="lightBlue">#2185f7</color>
+    <color name="yellow">#FFC107</color>
+    <color name="whiteBlue">#e6ebf0</color>
+    <color name="black2">#1c1c1c</color>
+    <color name="lightGray2">#EDEDED</color>
 </resources>

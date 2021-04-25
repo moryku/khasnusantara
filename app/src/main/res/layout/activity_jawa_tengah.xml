@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:text="Provinsi Jawa Tengah"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jateng_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suku Jawa" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Orang Jawa sering menyebut dirinya dengan Wong Jowo atau Tiang Jawi.
+Tahukah kalian?
+Suku Jawa tidak hanya ada di Indonesia, mereka juga ada yang mendiami negara Suriname (Amerika Selatan), Afrika Selatan, dan ke Haiti yang berada di sekitar Samudera Pasifik.
+Kira-kira mengapa orang Jawa bisa sampai sejauh itu?
+Pada zaman penjajahan Belanda banyak suku Jawa yang dibawa untuk bekerja di perkebunan Suriname, Afrika Selatan bahkan sampai Haiti.
+" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LAGU DAERAH" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp" />
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lir-Ilit"></TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <com.google.android.youtube.player.YouTubeThumbnailView
+                        android:id="@+id/videoLagu"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"></com.google.android.youtube.player.YouTubeThumbnailView>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/play">
+
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarian Daerah" />
+
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tari Gambyong"></TextView>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tari Gambyong merupakan salah satu bentuk tarian Jawa klasik yang biasanya dibawakan untuk pertunjukan atau menyambut tamu. " />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.youtube.player.YouTubeThumbnailView
+                        android:id="@+id/videoTari"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"></com.google.android.youtube.player.YouTubeThumbnailView>
+
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/play">
+
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pakaian Daerah" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jawi Jangkep merupakan salah satu pakaian adat khusus pria. Pakaian ini merupakan pakaian resmi yang berasal dari Jawa Tengah. Jawi Jangkep terdiri dari atasan yang berupa baju beskap yang biasanya memiliki motif bunga, sedangkan untuk bawahannya berupa kain jarik yang dililitkan pada ikat pinggang yang tersedia." />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jateng_pakaian"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makanan Tradisional" />
+
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lumpia Semarang" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Makanan Tradisional suku Jawa umumnya dikenal sesuai dengan nama daerah, kota atau kabupaten dimana makanan tersebut berkembang. Di daerah Jawa Tengah terdapat Makanan Tradisional Jawa salah satunya lumpia Semarang. Lumpia Semarang merupakan makanan yang berbahan dasar ayam, kecambah, wortel yang dibalut dengan kulit lumpia kemudian digoreng. " />
+
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jateng_makanan"></ImageView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rumah Adat" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rumah Joglo" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bentuk rumah orang Jawa yang tradisional ditentukan oleh bentuk atapnya. Berdasarkan bentuk atap ada yang disebut dengan rumah limasan, serotong, joglo, panggangepe, daragepak, macan nyerum, klabang nyander, tajuk, kutuk ngambang,  dan sinom. Bentuk rumah limasan paling banyak dimiliki penduduk. Golongan bangsawan biasanya membangun rumah dengan bentuk joglo." />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jateng_rumah"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alat Musik Tradisional" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gamelan" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Musik yang tercipta pada Gamelan Jawa berasal dari paduan bunyi gong, kenong dan alat musik Jawa lainnya. Irama musik umumnya lembut dan mencerminkan keselarasan hidup, sebagaimana prinsip hidup yang dianut pada umumnya oleh masyarakat Jawa." />
+
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jateng_alat_musik"></ImageView>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"></View>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

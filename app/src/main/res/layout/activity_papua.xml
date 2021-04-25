@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:text="Provinsi Jawa Papua"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/papua_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suku Dani" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suku dani atau disebut juga Ndani tinggal di wilayah pegunungan Papua tepatnya lembah Baliem.
+Tahukah kalian?
+ Suku Dani banyak mendirikan rumah di dekat sungai yang berada di Lembah Baliem. Sungai-sungai yang berada di Lembah Baliem biasanya memiliki jembatan-jembatan gantung yang terbuat dari tanaman merambat.
+" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LAGU DAERAH" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp" />
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lagu Yamko Rambe Yamko"></TextView>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lagu Yamko Rambe Yamko. Lagu Yamko Rambe Yamko memiliki kesan ceria tetapi bercerita tentang perang antarsuku. Semoga semua suku saling hidup rukun agar tidak terjadi peperangan. "></TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <com.google.android.youtube.player.YouTubeThumbnailView
+                        android:id="@+id/videoLagu"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"></com.google.android.youtube.player.YouTubeThumbnailView>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/play">
+
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarian Daerah" />
+
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tari Selamat Datang "></TextView>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tarian daerah yaitu Tari Selamat Datang, Tari Musyoh, Taria Suanggi, dan Tari Perang.
+Tari Selamat Datang merupakan salah satu tarian tradisional penyambutan yang berasal dari daerah Papua.Tarian ini biasanya dibawakan oleh penari pria dan wanita untuk menyambut tamu kehormatan atau tamu penting yang berkunjung ke sana. Tarian ini mempunyai makna rasa bentuk ungkapan rasa hormat,rasa syukur, dan kebahagian masyarakat dalam menyambut para tamu.
+" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.youtube.player.YouTubeThumbnailView
+                        android:id="@+id/videoTari"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"></com.google.android.youtube.player.YouTubeThumbnailView>
+
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/play">
+
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pakaian Daerah" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pakaian asli orang Dani amat minim. Laki-laki cukup menutup penisnya dengan kulit labu air yang sudah kering, wanitanya hanya memakai rok dari untaian serta rumput. Koteka, yaitu labu penutupalat kelamin orang Dani, ada beberapa macam. Waktu bekerja mereka menggunakan pakaian yang pendek, dan dalam kesempatan resmi mereka pakai koteka yang panjang. Untuk hiasan ada koteka yang dibentuk melingkar-lingkar, dan diukir dengan motif tertentu. " />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/papua_pakaian"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makanan Tradisional" />
+
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ulat Sagu" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ulat sagu diolah menjadi sate sagu dengan cara dipanggang. " />
+
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/papuan_makanan"></ImageView>
+
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nPapeda" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Papeda merupakan makanan dari pati sagu yang diberi air panas dan dimakan selagi hangay, rasanya hambar namun biasanya dipadukan dengan berbagai jenis lauk lainnya. " />
+
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/papua_makanan_papeda"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rumah Adat" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rumah Honae" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rumah suku Dani disebut Honae. Honae terdiri atas dua lantai. Lantai atas untuk tidur dan lantai bawah digunakan untuk bersantai, makan, dan mengerjakan kerajinan tangan. Pintu rumah Honae sangat kecil dan tidak memiliki jendela. Dinding rumah terbuat dari lembaran kayu atau kulit kayu yang diikat menggunakan rotan atau kulit kayu. Lantai tanah dalam rumah digali beberapa inci kemudian ditutupi dengan rumput kering tebal-tebal. Atap rumahnya terbuat dari rumput ilalang.
+Tahukah kalian?
+Bentuk rumah Honae yang melingkar atau bulat melambangkan persatuan yang tinggi antarsesama suku. Menurut mereka, tinggal dalam satu Honae berarti mempunyai tujuan yang sama dalam mengerjakan suatu pekerjaan.
+" />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/papua_rumah"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alat Musik Tradisional" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tifa" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alat musik satu-satunya yang dikembangkan oleh suku Dani adalah genggong yang terbuat dari bambu. Alat tersebut hanya dimainkan sendiri-sendiri oleh orang laki-laki dewasa dan remaja.
+Alat musik yang lain berupa tifa dan atowosejenis genderang.
+" />
+
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/papuan_musik"></ImageView>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"></View>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

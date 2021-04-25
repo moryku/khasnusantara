@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:text="Provinsi Jakarta"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jakarta_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suku Betawi" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Betawi berasal dari kata Batavia, yaitu nama kota Jakarta pada jaman penjajahan dulu. Tahukah kalian? Suku Betawi diperkirakan berasal dari orang-orang Mleayu, Sunda, Jawa, Bugis, Makassar, Bali, Ambon, dan rasa lain seperti Arab, Cina, Portugis dan sebagainya. " />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LAGU DAERAH" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp" />
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kicir-Kicir"></TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <com.google.android.youtube.player.YouTubeThumbnailView
+                        android:id="@+id/videoLagu"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"></com.google.android.youtube.player.YouTubeThumbnailView>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/play">
+
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarian Daerah" />
+
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tari Yapong"></TextView>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tari Yapong memiliki gerakan dinamis dengan suasana gembira. Dinamakan yapong karena muncul dari lagu yang mengiringi dengan bunyi ya, ya, ya dan iringan musik berbunyi pong, pong, pong sehingga lahirlah yapong." />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.youtube.player.YouTubeThumbnailView
+                        android:id="@+id/videoTari"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"></com.google.android.youtube.player.YouTubeThumbnailView>
+
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/play">
+
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pakaian Daerah" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Baju Sadariah untuk laki-laki"></TextView>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Baju Sadariah ini terdiri dari :
+\n1. Kopiah hitam polos sebagai penutup kepala
+\n2. Baju Koko berleher tertutup dengan bahan polos atau
+\n3. Selembar kain sarung bugis terlipat rapi disangkutkan di leher (Sarung ini berguna untuk sajadah di waktu shalat, sebagai sarung jika celana bernajis, juga sebagai senjata jika menghadapi musuh).
+\n4. Celana komprang dari bahan kain batik motif apa saja
+\n5. Alas kaki berupa terompah dari kulit.
+" />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jakarta_baju_sadariah"></ImageView>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\n\nKebaya Kerancang Betawi dikenakan dengan sarung maupun kain panjang."></TextView>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kebaya Kerancang Betawi dikenakan dengan sarung maupun kain panjang." />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jakarta_baju_kerancang"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makanan Tradisional" />
+
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dodol Betawi" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Proses pembuatan dodol Betawi bukanlah hal yang mudah. Untuk membuatnya perlu tenaga ekstra dalam mengaduk adonan dodol. Maklum saja satu panci kuali besar dengan diameter satu meter, adonan dodol harus diaduk selama tujuh jam tanpa berhenti. ?Kalau berhenti adonan akan keras dan rasanya tidak merata. Untuk membuat dodol Betawi sebanyak satu kuali memerlukan beberapa bahan dasar berupa gula merah sebanyak tiga peti, gula pasir empat plastik, santan kelapa tiga ember, dan 10 liter ketan hitam. Beberapa adonan dasar tersebut kemudian dicampur menjadi satu ke dalam kuali besar yang nantinya dapat menghasilkan 20 besek dodol Betawi. Dodol Betawi rasanya begitu legit dan lezat. Sama seperti dodol yang lain, dodol Betawi terasa lembek dan lengket saat di makan. ada beberapa ras yang dicampurkan seperti, dodol durian, dodol nangka cipedak, dodol lapis, dodol ketan, dan dodol Kole. Dodol kole merupakan dodol muda atau dodol setengah matang dengan rasa manis bercanpur gurih" />
+
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jakarta_dodol"></ImageView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rumah Adat" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rumah Kebaya" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rumah Adat Jakarta yaitu Rumah Kebaya. Disebut rumah kebaya karena bentuk atapnya menyerupai pelana yang berlipat dan jika dilihat dari " />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jakarta_rumah"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alat Musik Tradisional" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tanjidor" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dalam seni musik dikenal gambang kromong (tanjidor), gambang muncak dan sambrah. Biasanya gambang kromong atau tanjidor  digunakan untuk mengiringi pertunjukan ondel-ondel." />
+
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jakarta_alat_musik"></ImageView>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"></View>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

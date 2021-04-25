@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:text="Provinsi Aceh"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_aceh" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suku" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suku bangsa Aceh dalam kitab Sejarah Melayu disebut Lam Muri, Marcopolo yang singgah di sana tahun 1922 menyebutnya Lambri. Para Penjelajah Portugis menyebutnya Akhir. Orang Aceh sendiri menyebut dirinya Ureung Aceh.
+\n\nSuku bangsa Aceh merupakan hasil pencampuran beberapa bangsa pendatang dengan beberapa suku bangsa asli di Sumatra, yaitu dari Melayu, Minangkabau, Batak, Nias dan lain-lain. Suku bangsa Aneuk Jame merupakan pencampuran suku bangsa Minangkabau dengan suku bangsa Aceh dan Singkil.
+" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LAGU DAERAH" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp" />
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Bungong Jeumpa (Bunga Cempaka)"></TextView>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bungong Jeumpa  atau nama lainnya Bunga Cempaka. Bunga Cempaka adalah bunga khas Kesultanan Aceh yang dijadikan ciri khas kota Aceh. \n\nBungong Jeumpa merupakan lagu daerah yang berasa dari Aceh. Lagu yang sering dibawakan untuk iringan tarian adat ini mengisahkan keindahan tanah Aceh yang bisa dirasakan ketika melihat keindahan bunga cempaka. " />
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lirik lagu Bungong Jeumpa"></TextView>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bungong Jeumpa Bungong Jeumpa\nMeugah di Aceh\nBungong teuleubeh teuleubeh\nIndah lagoina\n\nBungong Jeumpa Bungong Jeumpa\nMeugah di Aceh\nBungong teuleubeh teuleubeh\nIndah lagoina\n\nPuteh kuneng meujampu mirah\nBungong si-ula indah lagoina\nPuteh kuneng meujampu mirah\nBungong si-ula indah lagoina\n\nLam sinar buleun lam sinar buleun\nAngen peu ayon\nLuroh meususon meususon yang mala mala\n\nLam sinar buleun lam sinar buleun\nAngen peu ayon\nLuroh meususon meususon yang mala mala\n\nKeubit that meubee meunyoe tatem com\nLeupah that harom si bungong jeumpa\n\nKeubit that meubee meunyoe tatem com\nLeupah that harom si bungong jeumpa\n\nBungong Jeumpa Bungong Jeumpa\nMeugah di Aceh\nBungong teuleubeh teuleubeh\nIndah lagoina\nBungong Jeumpa Bungong Jeumpa\nMeugah di Aceh\nBungong teuleubeh teuleubeh\nIndah…\n" />
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Video Lagu dan Tarian Bungong Jeumpa"></TextView>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.youtube.player.YouTubeThumbnailView
+                        android:id="@+id/videoLagu"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"></com.google.android.youtube.player.YouTubeThumbnailView>
+
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/play">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarian Daerah" />
+
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tari Daerah Aceh banyak dipengaruhi oleh agama Islam.
+Tarian daerah yang ada di Aceh antara lain Seudati, Seudati Inong, Tari Saman, Tari Bungong Jeumpa.
+\n\nTari Bungong Jeumpa (videonya sama dengan lagu). Tari Saman salah satu Tari Daerah yang berasal dari Suku Gayo
+" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <com.google.android.youtube.player.YouTubeThumbnailView
+                        android:id="@+id/videoTari"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"></com.google.android.youtube.player.YouTubeThumbnailView>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/play">
+
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pakaian Daerah" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ulee Balang" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Untuk pria disebut Linto Baro dan untuk perempuan disebut Daro " />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aceh_bule_alang"></ImageView>
+
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nBaju Adat Wanita Aceh Daro Baro" />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aceh_pakaian_daro"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makanan Tradisional" />
+
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Timphan " />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Timphan merupakan kue tradisional Aceh yang biasanya disajikan ketika lebaran. Timphan menu hidangan utama untuk tamu ketika berkunjung saat lebaran. Semua orang Aceh mengenal kue Timphan karena sudah menjadi tradisi turun-temurun. Timphan makanan berbalut daun pisang muda, paling terkenal adalah Timphan rasa srikaya. " />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aceh_makanan_timpan"></ImageView>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nGulee Itek (Gulai Bebek)" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gulee Itek berbahan dasar bebek kampung yang diolah hingga empuk dengan racikan khas bumbu Aceh. Gulai Aceh yang terkenal adalah buatan dari Bireun karena bumbunya yang sangat kental." />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aceh_makanan_gule_bebek"></ImageView>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nGulee Sie Kameng (Kari Kambing)" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gulee Sie Kameng berbahan baku daging kambing dengan nangka muda. Orang Aceh menyebutnya boh panah serta potongan pisang kepok. Bumbu gulee sie kameng menggunakan cabai kering, kelapa gongseng, kayu manis, dan lainnya." />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aceh_makanan_gule_kambing"></ImageView>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nMie Aceh" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mie Aceh merupakan masakan mie pedas Aceh. Mie Aceh berwarna kuning dan tebal dicampur dengan irisan daging sapi, daging kambing, atau makanan laut (kepiting, udang, dan cumi) disajikan dalam sup sejenis kari yang gurih dan pedas. Mie Aceh ada dua jenis yaitu mie Aceh goreng (digoreng dan kering) dan mie Aceh kuah (sup). Biasanya ditaburi bawang goreng dan disajikan bersama emping, potongan bawnag merah, mentimun, dan jeruk nipis. " />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mie Goreng" />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aceh_makanan_mie_goreng"></ImageView>
+
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nMie Kuah" />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aceh_makanan_mie_kuah"></ImageView>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nKue Adee" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Setelah bencana Tsunami tahun 2004 semua masyarakat Aceh hidup dari nol. Masyarakat mulai menjual kue Adee untuk mencari nafkah. Kue Adee memiliki tekstur lembut, gurih, legit, manis, dan beraroma bawang goreng sering disajikan untuk panganan ketika minum kopi." />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aceh_makanan_kue_ade"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rumah Adat" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rumah Aceh atau yang lebih dikenal dengan nama Rumoh Aceh merupakan Rumah Adat dari suku Aceh. Rumah ini bertipe rumah panggung dengan 3 bagan utama dan 1 bagian tambahan. Tiga bagian utama dari rumah Aceh yaitu serambi depan, serambi tengah dan  serambi belakang. Sedangkan satu bagian tambahannya yaitu rumah dapur.  Atap rumah berfungsi sebagai tempat penyimpanan pusaka keluarga." />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aceh_rumah_adat"></ImageView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alat Musik Tradisional" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nArbab" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Arbab adalah sejenis alat musik gesek tradisional. Bahannya dibuat dari labu pahit dipilih yang tua, bambu, kulit kambing, benang hori. Alat geseknya dibuat dari bulu ekor kuda dan dapat pula digunakan ijuk riman atau ijuk enau yang kuat. " />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aceh_musik"></ImageView>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"></View>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

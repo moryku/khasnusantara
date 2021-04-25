@@ -1,18 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context="com.um.puak.MainActivity">
 
-    <TextView
+<!--    <com.richpath.RichPathView-->
+<!--        android:padding="8dp"-->
+<!--        android:id="@+id/mapIndo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:vector="@drawable/ic_indonesia" />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/sea"-->
+<!--        android:layout_marginBottom="-90dp"-->
+<!--        android:layout_marginLeft="-60dp"-->
+<!--        android:layout_marginRight="-60dp"-->
+<!--        android:scaleType="centerCrop"></ImageView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_margin="-60dp"
+        android:layout_height="match_parent">
+    <VideoView
+        android:id="@+id/mapVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"></VideoView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5063b9db"></View>
+
+    <com.um.puak.IndonesiaMapView
+        android:id="@+id/mapIndo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="48dp"
+        android:layout_marginTop="80dp"
+        app:imProvinceBackgroundColor="#fff"
+        app:imProvinceActiveBackgroundColor="#ee5253"
+        app:imProvinceStrokeColor="#000"
+        app:imProvinceSelectByClick="true"
+        app:imAnimationDuration="200"
+        app:imProvinceMultiSelect="false"
+        app:imMapAppearWithAnimation="true"
+        android:elevation="10dp"/>
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/app_name"-->
+<!--        android:textSize="40sp"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:textColor="#002231"-->
+<!--        android:fontFamily="@font/double_buble"></TextView>-->
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="-24dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/puak">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </ImageView>
+
+        <ImageView
+            android:id="@+id/quiz"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/quiz"
+            android:background="@drawable/circle"
+            android:padding="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            ></ImageView>
+    </RelativeLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="2"></LinearLayout>-->
+
+</LinearLayout>
