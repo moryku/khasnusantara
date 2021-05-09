@@ -32,9 +32,11 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this@MainActivity, AcehActivity::class.java))
             } else if (richPath.name == Province.Jawa_Barat.toString()) {
                 startActivity(Intent(this@MainActivity, JawaBaratActivity::class.java))
+            } else if (richPath.name == Province.Jawa_Timur.toString()) {
+                startActivity(Intent(this@MainActivity, JatimActivity::class.java))
             } else if (richPath.name == Province.Sumatera_Barat.toString()) {
                 startActivity(Intent(this@MainActivity, SumateraBaratActivity::class.java))
-            } else if (richPath.name == Province.Sulawesi_Selatan.toString()) {
+            } else if (richPath.name == Province.Sumatera_Selatan.toString()) {
                 startActivity(Intent(this@MainActivity, SumateraSelatanActivity::class.java))
             } else if (richPath.name == Province.Jakarta.toString()) {
                 startActivity(Intent(this@MainActivity, JakartaActivity::class.java))
@@ -123,6 +125,9 @@ class MainActivity : AppCompatActivity() {
 //        })
         quiz.setOnClickListener {
             startActivity(Intent(this, QuizActivity::class.java))
+        }
+        dev.setOnClickListener {
+            startActivity(Intent(this, DeveloperActivity::class.java))
         }
     }
 

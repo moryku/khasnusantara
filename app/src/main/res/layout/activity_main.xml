@@ -72,15 +72,52 @@
 <!--        android:textColor="#002231"-->
 <!--        android:fontFamily="@font/double_buble"></TextView>-->
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="-24dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
     <ImageView
+        android:id="@+id/icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="-24dp"
-        android:layout_alignParentRight="true"
+
         android:src="@drawable/puak">
 
+
+
     </ImageView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/icon"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="PEMBELAJARAN PETA"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/title1"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_regular"
+
+            android:textSize="16sp"
+            android:text="Keragaman Suku Bangsa"></TextView>
+            </LinearLayout>
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/quiz"
@@ -91,6 +128,18 @@
             android:padding="8dp"
             android:layout_alignParentBottom="true"
             android:layout_margin="16dp"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/dev"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/developer"
+            android:background="@drawable/circle"
+            android:padding="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/quiz"
+            android:layout_marginBottom="16dp"
             ></ImageView>
     </RelativeLayout>
 

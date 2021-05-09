@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:text="Provinsi Jawa Timur"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jatim_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suku Madura" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suku bangsa Madura berasal dari Pulau Madura.
+Tahukah kalian?
+Bahasa Madura juga mengenal tingkatan yaitu bahasa kasar, menengah, dan halus. Bahasa kasar digunakan untuk komunikasi sehari-hari masyarakat banyak.
+ " />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LAGU DAERAH" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp" />
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Karapan Sape dan Tanduk Majeng"></TextView>
+
+<!--                <TextView-->
+<!--                    style="@style/FontRegular"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Lagu Tokecang dinyanyikan bersama oleh anak-anak yang bertujuan untuk menghilangkan rasa bosan karena menunggu terlalu lama dan mengisi waktu luang mencari hiburan. " />-->
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.youtube.player.YouTubeThumbnailView
+                        android:id="@+id/videoLagu"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"></com.google.android.youtube.player.YouTubeThumbnailView>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/play">
+
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarian Daerah" />
+
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tari Moang Sangkal"></TextView>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tari Moang Sangkal artinya membuang hal-hal yang buruk atau gelap. Penarinya berjumlah ganjil dan kostum yang digunakan adalah warna cerah. Jika warna yang digunakan merah dan kuning idartikan raja sedang bahagia. Sebaliknya, jika warna yang digunakan merah dan hijau atau kuning dan hijau berkamna raja sedang marah. " />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.youtube.player.YouTubeThumbnailView
+                        android:id="@+id/videoTari"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"></com.google.android.youtube.player.YouTubeThumbnailView>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/play">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pakaian Daerah" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pakaian Adat  Madura " />
+
+
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\na.	Pria
+\nPria menggunakan baju pesa berwarna hitam, celana gomboran yang lebar berwarna hitam, ikat kepala (odeng).
+\nb.	Wanita
+\nWanita menggunakan baju sono atau baju kurung berwarna hitam, sarung poleng.
+" />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jatim_pakaian_madura"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makanan Tradisional" />
+
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sate Madura" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sate madura biasanya menggunakan ayam atau daging kambing yang dibakar kemudian dibalur dengan bumbu kacang dan diberi irisan bawang merah serta cabai rawit. " />
+
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jatim_sate_madura"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rumah Adat" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rumah Adat Suku Madura " />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rumah Adat Suku Madura ada tiga model yaitu :
+\n1.	Model slodoran
+\nModol pertama yaitu slodoran disebut juga dengan Malang are adalah rumah tanpa kamar dan hanya ada serambi depan, dapur, kandang sapi serta langgar.
+\n2.	Model  sedana
+\nRumah yang memiliki kamar tidur, dapur, kandnag sapi, dan langgar.
+\n3.	Model  sedanan
+\nRumah sedanan memiliki kamar, langgar, ruangan khusus yang dibedakan untuk tamu pria dan wanita.
+\n\nTahukah kalian?
+\nBentuk atap disebut gandrih yang bentuknya menyerupai kepala sapi dengan tanduknya.
+" />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jatim_rumah"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alat Musik Tradisional" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saronen" />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alat musik tradisional dari Madura adalah Saronen yang berbentuk seperti seruling dan bagian peniupnya seperti ada kumis-kumisan" />
+
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jatim_saroenan"></ImageView>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"></View>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
