@@ -312,7 +312,7 @@
                     style="@style/FontRegular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Rumah Adat Jakarta yaitu Rumah Kebaya. Disebut rumah kebaya karena bentuk atapnya menyerupai pelana yang berlipat dan jika dilihat dari " />
+                    android:text="Rumah Adat Jakarta yaitu Rumah Kebaya. Disebut rumah kebaya karena bentuk atapnya menyerupai pelana yang berlipat dan jika dilihat dari samping maka lipatan-lipatan terlihat seperti kebaya. " />
 
                 <ImageView
                     style="@style/Image"

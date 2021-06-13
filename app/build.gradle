@@ -52,6 +52,7 @@ dependencies {
     implementation 'com.google.android.libraries.places:places:2.4.0'
 
     implementation 'com.github.tarek360.RichPath:animator:0.1.1'
+    implementation 'net.colindodd:gradientlayout:1.2'
 
 }
 apply plugin: 'kotlin-android-extensions'

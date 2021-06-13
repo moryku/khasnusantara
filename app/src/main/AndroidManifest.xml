@@ -13,14 +13,34 @@
         android:roundIcon="@drawable/puak"
         android:supportsRtl="true"
         android:theme="@style/Theme.KhasNusantara">
-        <activity android:name="com.um.puak.MainActivity"
-            android:screenOrientation="landscape"
+        <activity android:name="com.um.puak.SplashscreenActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.um.puak.MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.um.puak.NasionalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.um.puak.PembahasanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.um.puak.MenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
             android:name="com.um.puak.VideoYoutubeActivity"

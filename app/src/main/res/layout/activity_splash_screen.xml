@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="24dp"
+        android:gravity="center"
+        android:background="#95FFC107"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/puak">
+
+        </ImageView>
+
+        <TextView
+            style="@style/FontTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-14dp"
+            android:gravity="center"
+            android:text="Peta Keragaman Suku Bangsa di Indonesia"></TextView>
+
+        <TextView
+            style="@style/FontSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Siswa Kelas IV Sekolah Dasar"></TextView>
+
+        <View
+            style="@style/Divider"
+            android:layout_width="100dp"
+            android:layout_height="3dp">
+
+        </View>
+
+        <TextView
+            style="@style/FontRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Oleh : \n
+Sarah Mustika Barokah : \n
+Prodi Pendidikan Dasar : \n
+NIM. 19712251026 : \n
+Universitas Negeri Yogyakarta
+"></TextView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

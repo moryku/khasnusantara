@@ -105,22 +105,24 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.67" />
 
+
     <Button
-        android:id="@+id/btn_playAgain"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:id="@+id/btn_Pembahasan"
+
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="@null"
-        android:text="Mulai Lagi"
+        android:background="@drawable/solid_rounded"
+        android:backgroundTint="@color/lightGray2"
+        android:text="Pembahasan"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:layout_marginBottom="8dp"
         android:textSize="18sp"
-        android:textColorHighlight="@color/black2"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/btn_continue"
         app:layout_constraintEnd_toStartOf="@+id/guideline43"
-        app:layout_constraintStart_toStartOf="@+id/guideline42"
-        app:strokeColor="@color/white" />
+        app:layout_constraintStart_toStartOf="@+id/guideline42" />
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline54"

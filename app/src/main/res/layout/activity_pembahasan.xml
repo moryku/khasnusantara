@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:text="Pembahasan"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soal 1 " />
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawaban : A" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tari Gambyong berasal dari provinsi Jawa Tengah. Untuk gambar provinsi Jawa Tengah dapat kalian lihat pada gambar di bawah ini yang berwarna kuning. " />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/map_jawaban"></ImageView>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tahukah kalian?
+Istilah Gambyong berawal dari seorang penari yang bernama Gambyong. Ia memiliki kemahiran dalam menari dan kemerduan dalam suara. Tari Gambyong semakin digemari oleh masyarakat karena memadukan tari rakyat dengan tari keraton.
+\n\nB. Jawa Barat\n
+Tari daerah dari Jawa Barat yaitu tari Jaipong, Tari Topeng Cirebon, Tari Ketuk Tilu
+\n\nC.  Jawa Timur\n
+ Tari Reog Ponorogo, Tari Remo, Tari Topeng Malangan, Tari Beskalan (Malang), Tari Gandrung Banyuwangi, Tari Jaranan Buto (Banyuwangi)
+\n\nD. Yogyakarta\n
+		Tari Serimpi,  Tari Kumbang
+" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soal 2 " />
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawaban : A" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suku Toraja adalah suku yang menetap di pegunungan Sulawesi Selatan.
+\n\nTahukah kalian?
+\n\nSuku Toraja memiliki pegangan hidup yang disebut tau atau dalam bahasa Toraja artinya manusia. Tau memiliki empat prinsip yaitu kaya, berani, pintar, dan bijaksana. Jadi suku Toraja menjadi manusia sesungguhnya jika hidup sebagai tau yaitu kaya, berani, pintar, dan bijaksana.
+\n\nB. Suku Asmat dari Provinsi Papua
+\n\nC. Suku Sunda dari Provinsi Jawa Barat
+\n\nD. Suku Betawi dari Provinsi Jakarta
+" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soal 3" />
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawaban : C" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tari Piring
+\n\nTari Piring berasal dari Sumatera Barat. Tari Piring diperagakan dengan menggunakan piring sebagai media utama. Piring-piring tersebut diayun dengan gerakan-gerakan cepat yang teratur tanpa terlepas dari genggaman.
+
+" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soal 4" />
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawaban : B" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B. Papeda" />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/map_jawaban_4"></ImageView>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Papeda merupakan makanan tradisional suku Dani dari provinsi Papua. Papeda adalah makanan berupa bubur sagu khas Maluku dan Papua yang kebanyakan disajikan dengan ikan tongkol dibumbui kunyit. Papeda berwarna putih dan bertekstur lengket mirip lem dengan rasa yang tawar. " />
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\n\B. Kue bika berasal dari Provinsi Sumatera Barat" />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/map_jawaban_4b"></ImageView>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\n\C. Rujak Cingur berasal dari Jawa Timur" />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/map_jawaban_4c"></ImageView>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\n\D. Barobbo berasal dari Sulawesi Selatan" />
+
+                <ImageView
+                    style="@style/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/map_jawaban_4d"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soal 5" />
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawaban : A" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A.	Jawa Barat
+\nLagu daerah Tokecang merupakan lagu permainan Sunda yang dinyanyikan oleh anak-anak sambil berpegangan tangan berpasang-pasangan saling berhadapan. Tujuannya untuk menghilangkan rasa bosan karena menunggu terlalu lama dan mengisi waktu luang mencari hiburan.
+\n\nB.	Jawa Tengah
+\nLagu daerah antara lain Manuk Dadali, Es Lilin, Bubuy Bulan
+\n\nC.	Jakarta
+\nOndel-Ondel, Kicir-Kicir, Jali-Jali
+\n\nD.	Papua
+\nApuse, Sajojo
+" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soal 6" />
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawaban : D" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D. Tanjidor
+\nAlat musik Tanjidor dimainkan dengan cara ditiup.
+\n\nA.	Arbab berasal dari Provinsi Aceh yang dimainkan dengan cara digesek.
+\n\nB.	Tenun merupakan alat musik dari Provinsi Sumatera Selatan yang dimainkan dengan cara dipukul.
+\n\nC.	Keso-Keso merupakan alat musik dari Sulawesi Selatan yang dimainkan dengan cara digesek.
+" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soal 7" />
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawaban : C" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terhadap perbedaan kebudayaan suku Dani dalam hal pakaian daerah yang terkadang dianggap terbuka oleh beberapa orang, sikap kita hendaknya menunjukkan rasa kagum akan kekayaan budaya yang telah diwariskan secara turun temurun. Kita juga turut menghargai dan menghormati budaya dalam pakaian daerah suku Dani. " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soal 8" />
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawaban : B" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8.	Perbedaan asal suku bangsa antara Putri dan Ani merupakan bentuk keragaman suku bangsa di Indonesia. Sikap Putri yang mau menggunakan baju kebaya dari suku Jawa patut dihargai dengan cara mengajak foto bersama ataupun memujinya. Sikap yang tidak yaitu meminta Putri untuk menggunakan baju adat Bugis sesuai suku asalnya. Perbedaan suku bangsa yang ada di Indonesia bukanlah menjadi penghalang untuk saling berteman." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soal 9" />
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawaban : C" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paniki merupakan makanan orang Manado  dari Provinsi Sulawesi Utara dengan bahan baku utama daging kelelawar. Terhadap perbedaan makanan daerah sebaiknya kita saling menghargai karena berdasarkan agama ada yang haram jika memakannya. Sikap yang tepat dilakukan oleh Bobi adalah mengajak Ali makan bakso bersama. Sebaliknya, Ali juga tidak boleh menolak dengan kasar atau menghina makanan Paniki dari keluarga Bobi. Tanamkan sikap saling menghargai terhadap perbedaan makanan daerah dari suku lain. Tolaklah dengan baik jika makanan tersebut haram atau tidak diperbolehkan dalam agama. " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soal 10" />
+                <TextView
+                    style="@style/FontSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawaban : D" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp">
+
+                </View>
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D. Rumah Gadang di aplikasi jawabannya C Rumah Kebaya.
+\nRumah Gadang disebut juga rumah Bagonjong
+\n\nA.	Rumah Limas
+\nRumah Limas berasal dari Provinsi Sumatera Selatan yang memiliki bentuk seperti Limas.
+\n\nB.	Rumah Lamin
+\nRumah Lamin yang memiliki bentuk panjang merupakan rumah adat suku Dayak yang mendiami provinsi Kalimantan Timur.
+\n\nC.	Rumah Kebaya
+\nRumah Kebaya merupakan rumah adat suku Betawi di Provinsi Jakarta.
+" />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"></View>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

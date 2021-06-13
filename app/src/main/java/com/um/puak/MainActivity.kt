@@ -123,12 +123,6 @@ class MainActivity : AppCompatActivity() {
 //                //TODO do an action when a specific path is clicked.
 //            }
 //        })
-        quiz.setOnClickListener {
-            startActivity(Intent(this, QuizActivity::class.java))
-        }
-        dev.setOnClickListener {
-            startActivity(Intent(this, DeveloperActivity::class.java))
-        }
     }
 
     fun showAlertDialog(title: String, message: String) {

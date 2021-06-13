@@ -447,7 +447,7 @@ class QuizActivity : AppCompatActivity() {
         pilihanD = Quiz()
         pilihanD.text = "Rumah Gadang"
         dataPilihan.add(pilihanD)
-        question = Question(10, dataPilihan, pilihanC, 0, "Rumah adat terbuat dari kayu dan dapat ditinggali oleh keluarga besar. Atapnya berbentuk menonjol seperti tanduk kerbau dan biasa disebut dengan gonjong. Rumah adat yang dimaksud adalah....")
+        question = Question(10, dataPilihan, pilihanD, 0, "Rumah adat terbuat dari kayu dan dapat ditinggali oleh keluarga besar. Atapnya berbentuk menonjol seperti tanduk kerbau dan biasa disebut dengan gonjong. Rumah adat yang dimaksud adalah....")
         dataQuestion.add(question)
     }
 }

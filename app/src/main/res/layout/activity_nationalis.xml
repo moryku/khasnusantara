@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:text="Provinsi Jawa Barat"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/indonesia" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Anak-anak setelah kalian membaca materi tentang keragaman suku bangsa di Indonesia, diharapkan semakin menambah sikap nasionalisme terhadap bangsa Indonesia pada diri kalian.   " />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FontTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apakah itu nasionalisme?" />
+
+                <View
+                    style="@style/Divider"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp" />
+
+
+                <TextView
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nasionalisme adalah kesadaran semangat kebangsaan untuk mencintai bangsa dan negara sendiri. Bangsa Indonesia terdiri atas beragam suku bangsa dengan banyak perbedaan budaya. Oleh sebab itu, perbedaan budaya yang ada di Indonesia harus kita hargai dan lestarikan bersama. Contoh sikap nasionalisme yaitu.
+\n\n1)	Bangga menjadi bangsa Indonesia
+\n\n2)	Mengakui dan menghargai sepenuhnya keanekaragaman pada diri bangsa Indonesia
+\n\n3)	Bangga pada budaya yang beraneka ragam
+\n\n4)	Bersedia mempertahankan dan memajukan negara serta nama baik bangsa
+\n\n5)	Senantiasa membangun rasa persaudaraan, solidaritas dan kedamaian antar kelompok masyarakat dengan semangat persatuan
+\n\n6)	Memiliki rasa cinta tanah air Indonesia
+" />
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"></View>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

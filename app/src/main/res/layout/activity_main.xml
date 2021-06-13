@@ -119,28 +119,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/quiz"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/quiz"
-            android:background="@drawable/circle"
-            android:padding="8dp"
-            android:layout_alignParentBottom="true"
-            android:layout_margin="16dp"
-            ></ImageView>
 
-        <ImageView
-            android:id="@+id/dev"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/developer"
-            android:background="@drawable/circle"
-            android:padding="8dp"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/quiz"
-            android:layout_marginBottom="16dp"
-            ></ImageView>
     </RelativeLayout>
 
 <!--    <LinearLayout-->

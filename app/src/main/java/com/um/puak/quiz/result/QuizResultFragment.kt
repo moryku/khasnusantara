@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.akuarintar.ui.quiz.QuizActivity
 import com.um.puak.MainActivity
+import com.um.puak.PembahasanActivity
 import com.um.puak.R
 import kotlinx.android.synthetic.main.quiz_result_fragment.*
 
@@ -46,8 +47,8 @@ class QuizResultFragment : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
-        btn_playAgain.setOnClickListener {
-            startActivity(Intent(this, QuizActivity::class.java))
+        btn_Pembahasan.setOnClickListener {
+            startActivity(Intent(this, PembahasanActivity::class.java))
             finish()
         }
     }
